@@ -18,7 +18,9 @@ const Banner = ({ netflixOriginals }: Props) => {
     const max = netflixOriginals.length
     return () => {
       setMovieovie(netflixOriginals[Math.floor(Math.random() * max)])
-
+      console.log(movie?.backdrop_path);
+      console.log(movie?.poster_path);
+      
     }
   }, [netflixOriginals])
   //console.log(movie);
